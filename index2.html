@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title> Form Validation</title>
+  <link rel="stylesheet" href="style2.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+     
+      <div  id="validationForm" >
+      <label for="email">Email Text Field Validation</label>
+      <input type="email" id="email" placeholder="Enter email address">
+      <span style="color: red;" id="emailV"></span>
+      <br>
+
+      <label for="alpha">Alpha Text Field Validation</label>
+      <input type="text" id="alpha" placeholder="Enter alpha" >
+      <span style="color: red;" id="alphaV"></span>
+      <br>
+
+        <label for="gender">Radio Field Validation</label><br>
+        <input class="gender" type="radio" id="male" >
+        <label class="gender-label" for="male">Male</label>
+        <span style="color: red;" id="genderV"></span>
+    <br>
+        
+        <input class="gender"type="radio" id="female">
+        <label class="gender-label" for="femle">Female</label>
+        <span style="color: red;" id="genderV"></span>
+      <br>
+      <br>
+
+      <label for="url">URL Field Validation</label>
+      <input type="text" id="url" placeholder="Enter url">
+      <span style="color: red;" id="urlV"></span>
+      <br>
+
+      <label for="textarea">Textarea Field Validation</label>
+      <textarea class="text" id="textarea" placeholder="Testarea" ></textarea>
+      <span style="color: red;" id="textareaV"></span>
+      <br>
+
+      <label for="image">Image Field Validation</label>
+      <input class="image" type="file" id="image">
+      <span style="color: red;" id="imageV"></span>
+    </div>
+
+    <div class="right">
+      <label for="password">Password Text Field Validation</label>
+      <input type="password" id="password" placeholder="Enter password">
+      <span style="color: red;" id="passwordV"></span>
+      
+      <label for="phone">Phone Number Field Validation</label>
+      <br>
+      <div class="no">
+        <label class="country-code"></label>
+        <select id="country-code" class="country-code">
+          <option value="+1">United States (+1)</option>
+          <option value="+44">United Kingdom (+44)</option>
+          <option value="+91">India (+91)</option>
+        </select>
+      <input class="tel" id="phone" placeholder="Enter Phone Number">
+      <span style="color: red;" id="phoneV"></span>
+</div>
+      <label for="birthdate">Date Picker(Birth date)</label><br>
+      <input type="date" id="birthdate"><br>
+      <span style="color: red;" id="birthdateV"></span>
+
+      <label for="currency">Currency Field Validation</label>
+      <input type="text" id="currency" placeholder="Enter Currency">
+      <span style="color: red;" id="currencyV"></span>
+      <br>
+
+      <label for="checkbox">Checkbox Field Validation</label><br>
+      <input class="checkbox" type="checkbox" id="checkbox"> MEAN<br>
+      <input class="checkbox" type="checkbox" id="checkbox"> Blockchain<br>
+      <input class="checkbox" type="checkbox" id="checkbox"> React<br>
+      <input class="checkbox" type="checkbox" id="checkbox"> BA<br>
+    <br>
+
+      <label for="color">Color Field Validation</label>
+      <input class="color" type="color" id="color">
+    
+      <div class="submit" >
+        <button type="submit" onclick="validateForm()" class="submit-btn">Submit</button>
+      </div>
+      </div>
+    </div>
+    <p id="message"></p>
+  </div>
+  </div>
+</body>
+</html>
